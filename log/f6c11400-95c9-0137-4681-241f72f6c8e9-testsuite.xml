@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<ns2:test-suite xmlns="" xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1564581777058" stop="1564581777074">
+  <name>POST /pessoa status 400</name>
+  <title>POST /pessoa status 400</title>
+  <test-cases>
+    <test-case start="1564581777059" stop="1564581777059" status="broken">
+      <name>POST /pessoa status 400 name is required</name>
+      <title>POST /pessoa status 400 name is required</title>
+      <failure>
+        <message>No primary server is available in cluster: #&lt;Cluster topology=Unknown[cluster0-shard-00-00.mongodb.net:27017,cluster0-shard-00-01.mongodb.net:27017,cluster0-shard-00-02.mongodb.net:27017] servers=[#&lt;Server address=cluster0-shard-00-00.mongodb.net:27017 UNKNOWN&gt;,#&lt;Server address=cluster0-shard-00-01.mongodb.net:27017 UNKNOWN&gt;,#&lt;Server address=cluster0-shard-00-02.mongodb.net:27017 UNKNOWN&gt;]&gt; with timeout=30, LT=0.015</message>
+        <stack-trace>C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/server_selector/selectable.rb:184:in `select_server'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:354:in `select_server'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:247:in `legacy_read_with_retry'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:119:in `read_with_retry'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:60:in `read_with_retry_cursor'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/collection/view/iterable.rb:45:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/query_cache.rb:227:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:133:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `inject'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `destroy'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual.rb:20:in `destroy'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/persistable/destroyable.rb:51:in `destroy_all'&#xD;
+C:/Users/francielli.dias/testeAPIRest/spec/pessoa_post_spec.rb:3:in `block (2 levels) in &lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:348:in `instance_exec'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:348:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:507:in `block in run_owned_hooks_for'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:506:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:506:in `run_owned_hooks_for'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:458:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:542:in `block in run_before_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:186:in `block in isolate_for_context_hook'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:182:in `instance_exec'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:182:in `isolate_for_context_hook'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:541:in `run_before_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:594:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `map'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/configuration.rb:2008:in `with_suite_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:111:in `block in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/reporter.rb:74:in `report'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:110:in `run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:87:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:71:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `load'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="20181200"/>
+        <label name="host" value="CTNDELL99RGLZ1"/>
+      </labels>
+      <parameters/>
+    </test-case>
+    <test-case start="1564581777062" stop="1564581777062" status="broken">
+      <name>POST /pessoa status 400 age is number</name>
+      <title>POST /pessoa status 400 age is number</title>
+      <failure>
+        <message>No primary server is available in cluster: #&lt;Cluster topology=Unknown[cluster0-shard-00-00.mongodb.net:27017,cluster0-shard-00-01.mongodb.net:27017,cluster0-shard-00-02.mongodb.net:27017] servers=[#&lt;Server address=cluster0-shard-00-00.mongodb.net:27017 UNKNOWN&gt;,#&lt;Server address=cluster0-shard-00-01.mongodb.net:27017 UNKNOWN&gt;,#&lt;Server address=cluster0-shard-00-02.mongodb.net:27017 UNKNOWN&gt;]&gt; with timeout=30, LT=0.015</message>
+        <stack-trace>C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/server_selector/selectable.rb:184:in `select_server'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:354:in `select_server'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:247:in `legacy_read_with_retry'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:119:in `read_with_retry'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/retryable.rb:60:in `read_with_retry_cursor'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongo-2.9.0/lib/mongo/collection/view/iterable.rb:45:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/query_cache.rb:227:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:133:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `inject'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual/mongo.rb:96:in `destroy'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/contextual.rb:20:in `destroy'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/mongoid-7.0.4/lib/mongoid/persistable/destroyable.rb:51:in `destroy_all'&#xD;
+C:/Users/francielli.dias/testeAPIRest/spec/pessoa_post_spec.rb:3:in `block (2 levels) in &lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:348:in `instance_exec'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:348:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:507:in `block in run_owned_hooks_for'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:506:in `each'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:506:in `run_owned_hooks_for'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:458:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:542:in `block in run_before_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:186:in `block in isolate_for_context_hook'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:182:in `instance_exec'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/memoized_helpers.rb:182:in `isolate_for_context_hook'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:541:in `run_before_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:594:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `map'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/configuration.rb:2008:in `with_suite_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:111:in `block in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/reporter.rb:74:in `report'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:110:in `run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:87:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:71:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `load'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="20181200"/>
+        <label name="host" value="CTNDELL99RGLZ1"/>
+      </labels>
+      <parameters/>
+    </test-case>
+  </test-cases>
+  <labels>
+    <label name="thread" value="20181200"/>
+    <label name="host" value="CTNDELL99RGLZ1"/>
+  </labels>
+</ns2:test-suite>

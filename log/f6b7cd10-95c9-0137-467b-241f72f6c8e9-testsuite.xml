@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ns2:test-suite xmlns="" xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1564581656777" stop="1564581656780">
+  <name>DELETE /pessoa/:id status 404</name>
+  <title>DELETE /pessoa/:id status 404</title>
+  <test-cases>
+    <test-case start="1564581656777" stop="1564581656777" status="broken">
+      <name>DELETE /pessoa/:id status 404 pessoa not found</name>
+      <title>DELETE /pessoa/:id status 404 pessoa not found</title>
+      <failure>
+        <message>uninitialized constant Faker</message>
+        <stack-trace>C:/Users/francielli.dias/testeAPIRest/spec/pessoa_delete_spec.rb:19:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:257:in `instance_exec'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:257:in `block in run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:503:in `block in with_around_and_singleton_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:460:in `block in with_around_example_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:464:in `block in run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/hooks.rb:464:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:460:in `with_around_example_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:503:in `with_around_and_singleton_context_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example.rb:254:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:633:in `block in run_examples'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:629:in `map'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:629:in `run_examples'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:595:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:596:in `block in run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:596:in `map'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/example_group.rb:596:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `map'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/configuration.rb:2008:in `with_suite_hooks'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:111:in `block in run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/reporter.rb:74:in `report'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:110:in `run_specs'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:87:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:71:in `run'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.8.2/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `load'&#xD;
+C:/Ruby25-x64/bin/rspec:23:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="20181200"/>
+        <label name="host" value="CTNDELL99RGLZ1"/>
+      </labels>
+      <parameters/>
+    </test-case>
+  </test-cases>
+  <labels>
+    <label name="thread" value="20181200"/>
+    <label name="host" value="CTNDELL99RGLZ1"/>
+  </labels>
+</ns2:test-suite>
